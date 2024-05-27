@@ -95,6 +95,37 @@ footer {
 
 footer div#dc{
     border: 3px aqua solid;
+    background-image: url(https://www.cartoonize.net/wp-content/uploads/2022/10/Discord-banner.jpg);
+    padding: 30px;
+    
+}
+
+footer p{
+    font-size: 287.5%;
+    color: aqua !important;
+    padding: 0;
+    margin: 0;
+}
+
+footer h2 {
+    font-size: 80px;
+}
+
+div#kozosseg {
+    /* margin: 15px; */
+    padding: 20px;
+    width: 50%;
+    background-color: rgba(2, 2, 15, 0.582);
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px #1a2447;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x:auto;
+    width: 96%;
+
 }
 
 #setup,
@@ -103,10 +134,12 @@ footer div#dc{
 }
 
 
-div#video {
+div#video, div#tablaz{
     text-align: center;
     padding: 15px;
     height: 550px;
+    overflow-x:auto
+
 }
 div#video iframe{
     width: 75%;
@@ -179,3 +212,26 @@ a.navbar-brand {
     transform: scale(1.1) translateY(10px);
     transition: all 0.5s linear;
 } */
+
+table {
+    margin: auto;
+    padding: 10px;
+    border: orange solid 3px;
+    height: 85%;
+    width: 85%;
+}
+
+table tr td, table tr th{
+    padding: 15px;
+    text-align: center;
+    border: #00aaff solid 3px !important;
+}
+
+table tr td.tartalom {
+    color: aqua;
+    letter-spacing: 3px;
+}
+
+div.container {
+    margin: auto;
+}
