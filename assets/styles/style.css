@@ -82,6 +82,10 @@ div#me ul li:nth-child(odd) {
     color: aqua;
 }
 
+div#me ul {
+overflow-y: auto;
+} 
+
 div#me p, div#me ul li{
     text-align: left;
 }
