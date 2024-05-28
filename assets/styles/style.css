@@ -82,7 +82,7 @@ div#me ul li:nth-child(odd) {
     color: aqua;
 }
 
-div#me ul {
+div#me {
 overflow-y: auto;
 } 
 
