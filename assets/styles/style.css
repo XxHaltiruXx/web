@@ -74,17 +74,15 @@ nav img:hover {
 
 div#me,
 div#setup {
-    font-size:100%;
+    height: 750px;
+    font-size:99%;
+    overflow-y: auto;
 }
 
 
 div#me ul li:nth-child(odd) {
     color: aqua;
 }
-
-div#me {
-overflow-y: auto;
-} 
 
 div#me p, div#me ul li{
     text-align: left;
@@ -99,6 +97,7 @@ footer {
 
 footer div#dc{
     border: 3px aqua solid;
+    background-position:center;
     background-image: url(https://www.cartoonize.net/wp-content/uploads/2022/10/Discord-banner.jpg);
     padding: 30px;
     
@@ -129,18 +128,13 @@ div#kozosseg {
     align-items: center;
     overflow-x:auto;
     width: 96%;
-
-}
-
-#setup,
-#me {
-    height: 750px;
 }
 
 
 div#video, div#tablaz{
     text-align: center;
     padding: 15px;
+    margin: 25px 0;
     height: 550px;
     overflow-x:auto
 
@@ -182,7 +176,7 @@ li.item-list:hover {
 }
 
 a.navbar-brand {
-    margin: 0 !important;
+    margin: 0 0 0 3% !important;
 }
 
 
@@ -212,6 +206,31 @@ a.navbar-brand {
     
 }
 
+.link-animationor {
+    display: inline-block;
+    position: relative;
+    color: orange !important;
+  }
+  
+.link-animationor::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 6px;
+    bottom: 7px;
+    left: 0;
+    background-color: orange !important;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+  
+.link-animationor:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: orange;
+    
+}
 /* iframe:hover {
     transform: scale(1.1) translateY(10px);
     transition: all 0.5s linear;
@@ -238,4 +257,5 @@ table tr td.tartalom {
 
 div.container {
     margin: auto;
+    padding: 0;
 }
