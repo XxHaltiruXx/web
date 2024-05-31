@@ -1,0 +1,173 @@
+/* Szerzők: Haltiru, TW, MoreHaloUnd */
+/* Alapértelmezett beállítások */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(347deg, rgba(0, 0, 0, 1) 0%, rgba(0, 194, 255, 1) 30%, rgba(255, 165, 0, 1) 100%);
+    /* https://cssgradient.io/ */
+    color: orange;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+/* Címek */
+
+h1 {
+    text-align: center;
+}
+
+/* Navigácio */
+.navbar {
+    background-color: orange;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px black;
+    margin: auto;
+    width: 20% !important;
+}
+
+a.home {
+    margin: auto;
+}
+
+.navkep {
+    padding: 0 0 10px 0!important;
+    margin: 0 !important;
+}
+nav img {
+    filter: grayscale(100%);
+    transition: 1s all ease;
+}
+nav img:hover {
+    filter: grayscale(0%);
+    transition: 0.25s all ease;
+}
+
+
+/* Képek */
+
+img#kep {
+    margin: auto;
+    display: block;
+    width: 100%;
+}
+
+/* Dobozok */
+div#gep,div#eszkoz,div#szoftver {
+    height: 550px;
+    font-size: 120%;
+    padding: 10px;
+    margin: 35px auto;
+}
+
+div#gep h1,div#szoftver h1{
+    padding: 20px 0;
+    color: aqua;
+}
+div#eszkoz h1 {
+    padding: 20px 0;
+    color: orange;
+}
+
+div#gep ul li:nth-child(odd),div#eszkoz ul li:nth-child(2n),div#szoftver ul li:nth-child(odd) {
+    color: aqua;
+}
+div#container {
+    margin: 35px auto;
+}
+
+/* Osztályok */
+
+.keret {
+    padding: 10px;
+    background-color: rgba(2, 2, 15, 0.481);
+    border: 3px orange solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.keret p {
+    font-variant: small-caps;
+}
+
+.kek {
+    color: aqua;
+}
+
+/* Animációk */
+.link-animation {
+    display: inline-block;
+    position: relative;
+    color: #00aaff !important;
+}
+
+.link-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 7px;
+    left: 0;
+    background-color: #00aaff !important;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.link-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: #00aaff;
+}
+
+.link-animationor {
+    display: inline-block;
+    position: relative;
+    color: orange !important;
+}
+
+.link-animationor::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 6px;
+    bottom: 7px;
+    left: 0;
+    background-color: orange !important;
+    transform-origin: bottom right;
+    transition: transform 0.35s ease-out;
+}
+
+.link-animationor:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    color: orange;
+}
+
+/* Listák */
+
+li.item-listo {
+    list-style-type: none;
+    border-left: solid 4px rgb(0, 143, 209);
+    margin-bottom: 8px;
+    padding: 0 0 0 8px;
+    transition: border-left 0.1s ease-in-out;
+}
+
+li.item-listo:hover {
+    border-left: solid 9px rgb(255, 153, 0);
+}
+
+li.item-listb {
+    list-style-type: none;
+    border-left: solid 4px  rgb(255, 153, 0);
+    margin-bottom: 8px;
+    padding: 0 0 0 8px;
+    transition: border-left 0.1s ease-in-out;
+}
+
+li.item-listb:hover {
+    border-left: solid 9px rgb(0, 143, 209);
+}
