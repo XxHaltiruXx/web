@@ -2,7 +2,6 @@
 /* Alapértelmezett beállítások */
 * {
     box-sizing: border-box;
-    margin: 0;
 }
 
 body {
@@ -25,7 +24,7 @@ h1, h2 {
     border-radius: 15px;
     box-shadow: 10px 10px 20px black;
     margin: auto;
-    width: 35% !important;
+    width: 45% !important;
 }
 
 nav button {
@@ -120,16 +119,12 @@ div#video,
 div#tablaz {
     text-align: center;
     padding: 15px;
-    margin: 25px 0;
     height: 750px;
     overflow-x: auto;
     margin: auto;
     display: block;
 }
 
-div#ig {
-    margin: 25px 0;
-}
 
 div#video iframe {
     width: 75%;
@@ -154,10 +149,6 @@ div#setup a {
 div#setup a:hover {
     font-style: italic;
     color: aqua;
-}
-
-div#munkaim {
-    margin: 25px 0;
 }
 
 div#munkaim ol li{
@@ -237,11 +228,13 @@ table tr td#semmi {
 footer {
     width: 100%;
     display: flex;
+    margin: auto;
     justify-content: center;
     text-align: center;
 }
 
 footer div#dc {
+    width: 95%;
     border: 3px aqua solid;
     background-position: center;
     background-image: url(https://www.cartoonize.net/wp-content/uploads/2022/10/Discord-banner.jpg);
@@ -270,7 +263,7 @@ footer a {
 }
 
 .keret {
-    margin: 25px;
+    margin: 25px 0;
     padding: 10px;
     background-color: rgba(2, 2, 15, 0.481);
     border: 3px orange solid;
